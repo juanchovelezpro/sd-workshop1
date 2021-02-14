@@ -11,12 +11,15 @@
 Para resolver el punto 1 se realizó lo siguiente:
 
 Primero se instala wget en las máquinas:
+
 `sudo yum install -y wget`
 
 Debemos acceder al directorio /var/www/html para guardar el index.html de ICESI.
+
 `cd /var/www/html`
 
 Con esto ya podemos hacer scraping a la página de ICESI y se guarda en el directorio /var/www/html.
+
 `wget www.icesi.edu.co`
 
 Luego se instala httpd que nos permite que nuestra máquina sea un servidor web.
@@ -31,6 +34,7 @@ Para el punto 2 las instrucciones se estipulan en el archivo [script.sh][script.
 [script.sh]: https://github.com/juanchovelezpro/sd-workshop1/blob/master/script.sh "script.sh".
 
 Finalmente para el bonus, se coloca el atributo **type: "dhcp"**  en la configuración de la network. 
+
 `config.vm.network "public_network", type:"dhcp", bridge: "wlp3s0"`
 
 [server.sh]: https://github.com/juanchovelezpro/sd-workshop1/blob/master/server.sh "server.sh"
