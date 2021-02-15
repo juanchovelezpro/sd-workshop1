@@ -24,18 +24,10 @@ Con esto ya podemos hacer scraping a la página de ICESI y se guarda en el direc
 
 Luego se instala httpd que nos permite que nuestra máquina sea un servidor web.
 
-Se configura que el servidor httpd.conf muestre el index.html de icesi en el archivo [httpd.conf][httpd.conf]
-[httpd.conf]: https://github.com/juanchovelezpro/sd-workshop1/blob/master/httpd.conf "httpd.conf"
+Para más información de como se configura todo el server, se encuentra en el script [server.sh](https://github.com/juanchovelezpro/sd-workshop1/blob/master/server.sh "server.sh")
 
-Para más información de como se configura todo el server, se encuentra en el script [server.sh][server.sh]
-
-Para el punto 2 las instrucciones se estipulan en el archivo [script.sh][script.sh]
-
-[script.sh]: https://github.com/juanchovelezpro/sd-workshop1/blob/master/script.sh "script.sh".
+Para el punto 2 las instrucciones se estipulan en el archivo [script.sh](https://github.com/juanchovelezpro/sd-workshop1/blob/master/script.sh "script.sh")
 
 Finalmente para el bonus, se coloca el atributo **type: "dhcp"**  en la configuración de la network. 
 
-`config.vm.network "public_network", type:"dhcp", bridge: "wlp3s0"`
-
-[server.sh]: https://github.com/juanchovelezpro/sd-workshop1/blob/master/server.sh "server.sh"
-[script.sh]: https://github.com/juanchovelezpro/sd-workshop1/blob/master/script.sh "script.sh"
+`config.vm.network "public_network", type:"dhcp"`
