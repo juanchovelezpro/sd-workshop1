@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
 
-config.vm.network "public_network", type:"dhcp", bridge: "wlp3s0"
+config.vm.network "public_network", type:"dhcp"
 
   (1..2).each do |i|
     config.vm.define "web-#{i}" do |web|
